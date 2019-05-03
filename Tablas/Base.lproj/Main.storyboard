@@ -45,6 +45,9 @@
                     <navigationItem key="navigationItem" id="0Yl-Se-OQH">
                         <barButtonItem key="rightBarButtonItem" title="PANTALLA 2" id="O8e-kI-Wi7"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="JYG-1R-9Rr" kind="show" identifier="pantallaDosSegue" id="CL8-la-cia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

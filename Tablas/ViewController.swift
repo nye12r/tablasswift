@@ -38,6 +38,8 @@ class ViewController: UIViewController, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("ESTOY PULSANDO UNA FILA \(indexPath.row)")
+        print("ESTOY PULSANDO doble FILA \(indexPath.row)")
+
 
     }
     
