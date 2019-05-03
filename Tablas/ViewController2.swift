@@ -10,11 +10,14 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    @IBOutlet weak var labelTitulo: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad();
         print("se activo la funcion viewDidLoad del vc en la pantalla 2");
+        labelTitulo.text = nombrePdfRecibido!
     }
     
+    var nombrePdfRecibido: String?
     override func loadView() {
         super.loadView()
         print("Se activo la func loadView del vc en la pantalla 2")

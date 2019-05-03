@@ -39,8 +39,21 @@ class ViewController: UIViewController, UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("ESTOY PULSANDO UNA FILA \(indexPath.row)")
         print("ESTOY PULSANDO doble FILA \(indexPath.row)")
+        let idPdfSeleccionado=indexPath.row
+        self.performSegue(withIdentifier: "pantallaDosSegue", sender: idPdfSeleccionado)
 
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "pantallaDosSegue" {
+            let idPdfSeleccionadoRecibido = sender as! Int
+            let objPantalla2 : ViewController2 = segue.destination as! ViewController2
+            objPantalla2.nombrePdfRecibido = contenidoCeldas[idPdfSeleccionadoRecibido]
+
+            
+            
+        }
     }
     
 
